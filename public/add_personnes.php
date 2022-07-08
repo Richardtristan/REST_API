@@ -1,6 +1,6 @@
 <?php
 
-$url = 'http://localhost/add_personne/' . $prenom . '/' . $nom;
+$url = $_SERVER['HTTP_HOST'] . '/add_personne/' . $prenom . '/' . $nom;
 if (!empty($nom) && !empty($prenom)) {
     $data = array(
         'nom' => $nom,

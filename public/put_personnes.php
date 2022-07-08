@@ -1,6 +1,6 @@
 <?php
 
-$url = 'http://localhost/update_personne/id/' . $id . '/prenom/' . $prenom . '/nom/' . $nom;
+$url = $_SERVER['HTTP_HOST'] . '/update_personne/id/' . $id . '/prenom/' . $prenom . '/nom/' . $nom;
 if (!empty($nom) && !empty($prenom)) {
     $data = array(
         'nom' => $nom,
