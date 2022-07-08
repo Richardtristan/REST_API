@@ -20,7 +20,7 @@ get('/personne/prenom/$prenom', 'personne.php');
 get('/personne/nom/$nom', 'personne.php');
 get('/personne', 'personne.php');
 
-get('/add_personne/$prenom/$nom', 'add_personnes.php');
+get('/add_personne/prenom/$prenom/nom/$nom', 'add_personnes.php');
 post('/add_personne/prenom/$prenom/nom/$nom', 'personne.php');
 
 get('/update_personne/id/$id/prenom/$prenom/nom/$nom', 'put_personnes.php');

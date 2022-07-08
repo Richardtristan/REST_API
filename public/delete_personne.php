@@ -1,6 +1,6 @@
 <?php
 
-$url = $_SERVER['HTTP_HOST'] . '/delete_personne/id/' . $id ;
+$url = 'http://'. $_SERVER['HTTP_HOST'] . '/delete_personne/id/' . $id ;
 if (!empty($id) ) {
     $data = array(
         'id' => $id,
